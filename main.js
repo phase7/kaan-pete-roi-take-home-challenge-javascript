@@ -1,13 +1,14 @@
 const csv= require('csv-parser')
 const fs =  require('fs')
 
+const inputFile = 'Data.csv';
+const outputFile = 'volunteer-connection.csv';
+
 const createCsvWriter = require('csv-writer').createArrayCsvWriter;
 const csvWriter = createCsvWriter({
     header: ['node1', 'node2', 'weight'],
-    path: 'volunteer-connection.csv'
+    path: outputFile
 });
-
-
 
 
 // const results = []; // this is for debugging
@@ -15,7 +16,7 @@ let common_time = {};// here we'll keep the volunteers with overlapping shifts
 // let volunteers = [];//this is for debugging
 let weightedGraph = {}; //we'll keep the graph here
 
-fs.createReadStream('Data.csv')
+fs.createReadStream(inputFile)
 .pipe(csv({}))
 .on('data',(data) => {
 
