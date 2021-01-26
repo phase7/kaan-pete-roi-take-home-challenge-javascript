@@ -1,0 +1,25 @@
+{
+  "name": "JSDataAnalysis_KPR",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shatabdi-Barua/JSDataAnalysis_KPR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shatabdi-Barua/JSDataAnalysis_KPR/issues"
+  },
+  "homepage": "https://github.com/Shatabdi-Barua/JSDataAnalysis_KPR#readme"
+}
